@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGISTRATION FORM</title>
+
+    <style>
+      body {
+        background-color: #edf4ed;
+        margin: 0px;
+      }
+      #reg {
+        display: flex;
+        justify-content: center;
+        background-color: #abd1b5;
+        padding: 30px 0px;
+        margin-top: 0px;
+      }
+
+      td {
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        margin-right: 50px;
+      }
+      tr {
+        display: flex;
+        justify-content: center;
+        background-color: #edf4ed;
+      }
+      input {
+        padding: 5px 5px;
+      }
+      .html {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      p {
+        margin: 0px;
+      }
+      #submit {
+        background-color: #abd1b5;
+        width: 100%;
+        padding: 10px;
+        border-radius: 50px;
+        border: 1px solid #abd1b5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="reg">Registration Form</h1>
+
+    <form>
+      <table style="width: 100%" cellpadding="15" cellspacing="0">
+        <tr>
+          <td>First Name:</td>
+          <td>
+            <input type="text" name="first_name" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Middle Name:</td>
+          <td>
+            <input type="text" name="middle_name" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Last Name:</td>
+          <td>
+            <input type="text" name="last_name" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Address:</td>
+          <td>
+            <textarea
+              id="Address"
+              name="Address"
+              rows="3"
+              cols="50"
+              name="Address"
+            ></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" name="gender" value=" Male" /> Male <input
+            type="radio" name="gender" value= Female" /> Female
+          </td>
+        </tr>
+
+        <tr>
+          <td>Career Path Field:</td>
+          <td>
+            <select name="dropdown">
+              <option value="Front-end Developer" selected>
+                Front-end Developer
+              </option>
+              <option value="Back-end Developer">Back-end Developer</option>
+              <option value="Full-stack Developer">Full-stack Developer</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Technical skills:</td>
+          <td>
+            <div class="html">
+              <p>
+                <input type="checkbox" name="html" value="on" />
+                HTML
+              </p>
+              <p>
+                <input type="checkbox" name="css" value="on " />
+                CSS
+              </p>
+              <p>
+                <input type="checkbox" name="javascript" value="on" />
+                Javascript
+              </p>
+              <p>
+                <input type="checkbox" name="mySQL" value="on" />
+                MySQL
+              </p>
+              <p>
+                <input type="checkbox" name="php" value="on" />
+                Php
+              </p>
+              <p>
+                <input type="checkbox" name="laravel" value="on" />
+                Laravel
+              </p>
+              <p>
+                <input type="checkbox" name="react JS" value="on" />
+                React JS
+              </p>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <input id="submit" type="submit" name="submit" value="Submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

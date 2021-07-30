@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avocado Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+      }
+      header,
+      footer {
+        background-color: #52734d;
+        height: 20vh;
+      }
+      .article {
+        background-color: #91c788;
+        flex: 4;
+      }
+
+      .article > h1 {
+        padding: 20px 40px;
+        font-size: 35px;
+      }
+
+      .main-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .middle-container {
+        display: flex;
+      }
+      header,
+      aside,
+      nav,
+      footer {
+        padding: 15px;
+      }
+      aside {
+        background-color: #ddffbc;
+      }
+      .middle-container > aside {
+        flex: 1;
+        min-height: 60vh;
+      }
+      .middle-container > nav {
+        background-color: #91c788;
+        flex: 1;
+      }
+
+      .form-section {
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+      }
+
+      label {
+        width: 100px;
+        display: inline-block;
+      }
+      input {
+        margin: 5px 0px;
+      }
+
+      /* On screens that are 600px wide or less, the background color is olive */
+      @media screen and (max-width: 993px) {
+        body {
+          background-color: #126e82;
+        }
+        .middle-container {
+          display: flex;
+          flex-direction: column;
+          color: black;
+        }
+
+        .form-section {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section">
+      <header>
+        <h2>Header</h2>
+      </header>
+
+      <div class="main-container">
+        <div class="middle-container">
+          <article class="article">
+            <h1>Article</h1>
+            <div class="form-section">
+              <div>
+                <div>
+                  <label for="name">Name</label>
+                  <input type="text" placeholder="" />
+                </div>
+                <div>
+                  <label for="phone">Phone</label>
+                  <input type="text" placeholder="" />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input type="text" placeholder="" />
+                </div>
+                <div>
+                  <label for="date">Pickup Date Time</label>
+                  <input type="date" placeholder="" />
+                </div>
+                <div>
+                  <label for="pickup">Pickup Place</label>
+                  <input type="text" placeholder="" />
+                </div>
+                <div>
+                  <label for="dropoff">Dropoff Place</label>
+                  <input type="text" placeholder="" />
+                </div>
+              </div>
+
+              <div>
+                <h3>Which vehicle do you require?</h3>
+                <div class="radiobutton">
+                  <input type="radio" name="vehicle" /> Van
+                </div>
+                <div class="radiobutton">
+                  <input type="radio" name="vehicle" /> Jeepney
+                </div>
+                <div class="radiobutton">
+                  <input type="radio" name="vehicle" /> Tricyle
+                </div>
+
+                <h3 style="margin-top: 20px">Extras</h3>
+                <div class="radiobutton">
+                  <input type="radio" name="vehicle" /> Baby Seat
+                </div>
+                <div class="radiobutton">
+                  <input type="radio" name="vehicle" /> Wheelchair Access
+                </div>
+                <div class="radiobutton">
+                  <input type="radio" name="vehicle" /> Stock Tip
+                </div>
+                <input
+                  style="margin-top: 20px"
+                  id="submit"
+                  type="submit"
+                  name="submit"
+                  value="Submit Booking"
+                />
+              </div>
+            </div>
+          </article>
+
+          <aside>
+            <h2>Aside</h2>
+          </aside>
+
+          <nav>
+            <h2>Nav</h2>
+          </nav>
+        </div>
+
+        <footer>
+          <h2>Footer</h2>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

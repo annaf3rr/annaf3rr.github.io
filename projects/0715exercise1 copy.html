@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          height: 100vh;
+        }
+        .info {
+          background-color: darkslateblue;
+          text-align: center;
+          color: white;
+        }
+        .info h3,
+        .info ul,
+        form h3 {
+          margin: 1rem 0;
+        }
+        .info li {
+          list-style: none;
+          font-size: medium;
+        }
+        .info ul li {
+          list-style: none;
+          padding: 5px;
+        }
+        .info,
+        form {
+          padding: 20px;
+        }
+        .message_form {
+          display: grid;
+          grid-gap: 5px;
+          grid-template-columns: 100%;
+        }
+        .message_form label {
+          display: block;
+        }
+        .message_form input,
+        .message_form text,
+        .message_form button {
+          width: 100%;
+          padding: 1rem;
+          border: 1px solid;
+        }
+        button:hover {
+          background-color: #B8B5FF;
+          transition: 0.5s ease-in;
+        }
+        @media (min-width: 768px) {
+          .contact {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+          }
+          .info {
+            text-align: justify;
+          }
+          .info,
+          form {
+            padding: 100px;
+            height: 100vh;
+          }
+          .message_form {
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: 1fr 1fr;
+          }
+          .message_form .text,
+          .message_form .send {
+            grid-column: 1/3;
+          }
+        }
+</style>
+</head>
+  <body>
+    <div class="contact">
+    <div class="info">
+      <h2>Our Contacts</h2>
+      <ul>
+        <li>123 Kamagong St.</li>
+        <li>809987657-10</li>
+        <li>mail@mail.com</li>
+      </ul>
+     </div>
+    <form>
+      <h2>Send Us message</h2>
+      <br>
+        <div class="message_form">
+          <label>Your Name</label>
+            <input type="text" name="" id="name">
+          <label>Skype</label>
+            <input type="text" name="" id="skype">
+          <label>Email Address</label>
+            <input type="text" name="" id="email">
+          <label>Topic</label>
+            <input type="text" name="" id="topic">
+          <div class="text">
+            <label>Write your message</label>
+              <textarea name="message"></textarea>
+          </div>
+          <div class="send">
+            <button>Send</button>
+          </div>
+        </div>
+    </form>
+    
+  </body>
+</html>

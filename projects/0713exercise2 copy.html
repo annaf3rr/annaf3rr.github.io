@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0%;
+        background-color: white;
+        color: black;
+      }
+      .header {
+        background-color: #548ca8;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+      }
+      .nav {
+        background-color: #334257;
+      }
+      .nav a {
+        text-decoration: none;
+        padding: 20px;
+        color: #eeeeee;
+        display: inline-block;
+      }
+      a:hover {
+        background-color: #eeeeee;
+        color: #334257;
+      }
+      .footer {
+        display: flex;
+        justify-content: center;
+        color: #eeeeee;
+        background-color: #334257;
+        padding: 10px;
+         
+        width: 100%;
+      }
+        .container{
+          display: inline-flex;
+        }
+        .column {
+        border: 1px solid #548ca8;
+        padding: 120px;
+        width: auto;
+      }
+        /* On screens that are 992px wide or less, the background color is blue */
+        @media screen and (max-width: 769px) {
+          .container {
+            display: block;
+            width: 100%;
+            border: 1px solid #548ca8;
+            padding: 15px;
+          }
+          body {
+            background-color:#51C4D3;
+            color: white;
+            width: 100%;
+          }
+        }
+
+        /* On screens that are 600px wide or less, the background color is olive */
+        @media screen and (max-width: 376px) {
+          body {
+            background-color: #126E82;
+          }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Online Magazine</h1>
+    </div>
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div class="container">
+      <div class="column"> 
+      <nav>
+        <h3>Lifestyle</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+          debitis cum minima consequuntur laboriosam. Veritatis, aliquid
+          delectus ea adipisci cumque minima debitis iusto, eius dolor quae
+          eligendi? Magni, minima accusamus.
+        </p>
+      </nav>
+      </div>
+
+      <div class="column"> 
+      <nav>
+        <h3>Business</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+          debitis cum minima consequuntur laboriosam. Veritatis, aliquid
+          delectus ea adipisci cumque minima debitis iusto, eius dolor quae
+          eligendi? Magni, minima accusamus.
+        </p>
+      </nav>
+      </div>
+
+      <div class="column"> 
+      <nav>
+        <h3>Sports</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+          debitis cum minima consequuntur laboriosam. Veritatis, aliquid
+          delectus ea adipisci cumque minima debitis iusto, eius dolor quae
+          eligendi? Magni, minima accusamus.
+        </p>
+      </nav>
+      </div>
+    </div>
+
+    <div class="footer">
+      <footer>Copyright. All right reserved.</footer>
+    </div>
+  </body>
+</html>
+  </head>
+  <body></body>
+</html>
